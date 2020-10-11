@@ -1,0 +1,7 @@
+use_frameworks!
+target 'Lucky' do
+	pod 'RxSwift', '5.1.1'
+	pod 'RxCocoa', '5.1.1'
+	pod 'Alamofire', '4.9.1'
+   	pod 'RxAlamofire', '5.1.0'
+end

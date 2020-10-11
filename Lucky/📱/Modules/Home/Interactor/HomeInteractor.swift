@@ -7,11 +7,16 @@
 //
 
 import Foundation
+import RxSwift
 
 protocol HomeInteractorTestable {
-    
+    func getPromotions() -> Single<HomeModel?>
 }
 
 class HomeInteractor: HomeInteractorTestable {
+    private var provider = PromotionsProvider()
     
+    func getPromotions() -> Single<HomeModel?> {
+        return provider.getPromotions()
+    }
 }

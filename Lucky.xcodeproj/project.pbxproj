@@ -3,18 +3,34 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		270A3B03252D39F20052A0CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270A3B02252D39F20052A0CD /* AppDelegate.swift */; };
-		270A3B05252D39F20052A0CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270A3B04252D39F20052A0CD /* SceneDelegate.swift */; };
 		270A3B07252D39F20052A0CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270A3B06252D39F20052A0CD /* ViewController.swift */; };
-		270A3B0A252D39F20052A0CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 270A3B08252D39F20052A0CD /* Main.storyboard */; };
 		270A3B0C252D39F30052A0CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 270A3B0B252D39F30052A0CD /* Assets.xcassets */; };
 		270A3B0F252D39F30052A0CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 270A3B0D252D39F30052A0CD /* LaunchScreen.storyboard */; };
 		270A3B1A252D39F30052A0CD /* LuckyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270A3B19252D39F30052A0CD /* LuckyTests.swift */; };
 		270A3B25252D39F40052A0CD /* LuckyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270A3B24252D39F40052A0CD /* LuckyUITests.swift */; };
+		270A3B3C252D59CF0052A0CD /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270A3B36252D59CF0052A0CD /* HomeInteractor.swift */; };
+		270A3B3D252D59CF0052A0CD /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 270A3B37252D59CF0052A0CD /* HomeViewController.xib */; };
+		270A3B3E252D59CF0052A0CD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270A3B38252D59CF0052A0CD /* HomeViewController.swift */; };
+		270A3B3F252D59CF0052A0CD /* HomeWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270A3B39252D59CF0052A0CD /* HomeWireframe.swift */; };
+		270A3B40252D59CF0052A0CD /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270A3B3A252D59CF0052A0CD /* HomePresenter.swift */; };
+		270A3B41252D59CF0052A0CD /* HomeModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270A3B3B252D59CF0052A0CD /* HomeModule.swift */; };
+		2711BD83252E5767000BCE19 /* HomeCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2711BD82252E5767000BCE19 /* HomeCollectionViewDataSource.swift */; };
+		2711BD88252E57CC000BCE19 /* AppDelegate+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2711BD87252E57CC000BCE19 /* AppDelegate+Setup.swift */; };
+		2722AB0D25328F3F00F4803D /* TitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2722AB0C25328F3F00F4803D /* TitleCell.xib */; };
+		272C518A2532453600074B75 /* LuckyStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272C51892532453600074B75 /* LuckyStyles.swift */; };
+		272C518F2532454F00074B75 /* UIColor+Lucky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272C518E2532454F00074B75 /* UIColor+Lucky.swift */; };
+		272C51942532467B00074B75 /* UIFont+Lucky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272C51932532467B00074B75 /* UIFont+Lucky.swift */; };
+		2752E910252EA16600292C1E /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2752E90F252EA16600292C1E /* HomeCollectionViewCell.swift */; };
+		2752E918252EA1E300292C1E /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2752E917252EA1E300292C1E /* HomeCollectionViewCell.xib */; };
+		2752E91D252F868B00292C1E /* PromotionsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2752E91C252F868B00292C1E /* PromotionsProvider.swift */; };
+		2752E922252F905000292C1E /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2752E921252F905000292C1E /* HomeModel.swift */; };
+		27F5146B25326E650053A3E8 /* TitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F5146A25326E650053A3E8 /* TitleCell.swift */; };
+		D329A364B7E17607E42A8022 /* Pods_Lucky.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21CAC2A106A4ACC7344A6206 /* Pods_Lucky.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +51,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		21CAC2A106A4ACC7344A6206 /* Pods_Lucky.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lucky.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		270A3AFF252D39F20052A0CD /* Lucky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lucky.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		270A3B02252D39F20052A0CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		270A3B04252D39F20052A0CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		270A3B06252D39F20052A0CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		270A3B09252D39F20052A0CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		270A3B0B252D39F30052A0CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		270A3B0E252D39F30052A0CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		270A3B10252D39F30052A0CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +64,25 @@
 		270A3B20252D39F40052A0CD /* LuckyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LuckyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		270A3B24252D39F40052A0CD /* LuckyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyUITests.swift; sourceTree = "<group>"; };
 		270A3B26252D39F40052A0CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		270A3B36252D59CF0052A0CD /* HomeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		270A3B37252D59CF0052A0CD /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		270A3B38252D59CF0052A0CD /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		270A3B39252D59CF0052A0CD /* HomeWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeWireframe.swift; sourceTree = "<group>"; };
+		270A3B3A252D59CF0052A0CD /* HomePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		270A3B3B252D59CF0052A0CD /* HomeModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModule.swift; sourceTree = "<group>"; };
+		2711BD82252E5767000BCE19 /* HomeCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewDataSource.swift; sourceTree = "<group>"; };
+		2711BD87252E57CC000BCE19 /* AppDelegate+Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Setup.swift"; sourceTree = "<group>"; };
+		2722AB0C25328F3F00F4803D /* TitleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleCell.xib; sourceTree = "<group>"; };
+		272C51892532453600074B75 /* LuckyStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyStyles.swift; sourceTree = "<group>"; };
+		272C518E2532454F00074B75 /* UIColor+Lucky.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Lucky.swift"; sourceTree = "<group>"; };
+		272C51932532467B00074B75 /* UIFont+Lucky.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Lucky.swift"; sourceTree = "<group>"; };
+		2752E90F252EA16600292C1E /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		2752E917252EA1E300292C1E /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
+		2752E91C252F868B00292C1E /* PromotionsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionsProvider.swift; sourceTree = "<group>"; };
+		2752E921252F905000292C1E /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		27F5146A25326E650053A3E8 /* TitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCell.swift; sourceTree = "<group>"; };
+		42F6983ADAB5DF0691B7B53D /* Pods-Lucky.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lucky.debug.xcconfig"; path = "Target Support Files/Pods-Lucky/Pods-Lucky.debug.xcconfig"; sourceTree = "<group>"; };
+		FEE18C310DC8FA5B90FD2C1C /* Pods-Lucky.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lucky.release.xcconfig"; path = "Target Support Files/Pods-Lucky/Pods-Lucky.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D329A364B7E17607E42A8022 /* Pods_Lucky.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +111,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07D9D56508D139FBFFF65128 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				21CAC2A106A4ACC7344A6206 /* Pods_Lucky.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		270A3AF6252D39F20052A0CD = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +126,8 @@
 				270A3B18252D39F30052A0CD /* LuckyTests */,
 				270A3B23252D39F40052A0CD /* LuckyUITests */,
 				270A3B00252D39F20052A0CD /* Products */,
+				4AC31DB6E8BB2E06699EDB43 /* Pods */,
+				07D9D56508D139FBFFF65128 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +144,8 @@
 		270A3B01252D39F20052A0CD /* Lucky */ = {
 			isa = PBXGroup;
 			children = (
-				270A3B02252D39F20052A0CD /* AppDelegate.swift */,
-				270A3B04252D39F20052A0CD /* SceneDelegate.swift */,
-				270A3B06252D39F20052A0CD /* ViewController.swift */,
-				270A3B08252D39F20052A0CD /* Main.storyboard */,
-				270A3B0B252D39F30052A0CD /* Assets.xcassets */,
-				270A3B0D252D39F30052A0CD /* LaunchScreen.storyboard */,
-				270A3B10252D39F30052A0CD /* Info.plist */,
+				270A3B33252D54F60052A0CD /* 📱 */,
+				270A3B32252D53920052A0CD /* Resources */,
 			);
 			path = Lucky;
 			sourceTree = "<group>";
@@ -128,6 +168,147 @@
 			path = LuckyUITests;
 			sourceTree = "<group>";
 		};
+		270A3B32252D53920052A0CD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				270A3B02252D39F20052A0CD /* AppDelegate.swift */,
+				270A3B06252D39F20052A0CD /* ViewController.swift */,
+				270A3B0B252D39F30052A0CD /* Assets.xcassets */,
+				270A3B0D252D39F30052A0CD /* LaunchScreen.storyboard */,
+				270A3B10252D39F30052A0CD /* Info.plist */,
+				2711BD87252E57CC000BCE19 /* AppDelegate+Setup.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		270A3B33252D54F60052A0CD /* 📱 */ = {
+			isa = PBXGroup;
+			children = (
+				272C51882532452B00074B75 /* Styles */,
+				270A3B34252D59A70052A0CD /* Modules */,
+			);
+			path = "📱";
+			sourceTree = "<group>";
+		};
+		270A3B34252D59A70052A0CD /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				270A3B35252D59CF0052A0CD /* Home */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		270A3B35252D59CF0052A0CD /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2711BD7B252E562E000BCE19 /* Models */,
+				2711BD70252E55F6000BCE19 /* Interactor */,
+				2711BD74252E55FE000BCE19 /* Views */,
+				2711BD78252E5607000BCE19 /* Wireframe */,
+				2711BD79252E560F000BCE19 /* Presenter */,
+				2711BD7A252E5616000BCE19 /* Module */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		2711BD70252E55F6000BCE19 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				270A3B36252D59CF0052A0CD /* HomeInteractor.swift */,
+				2752E91C252F868B00292C1E /* PromotionsProvider.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		2711BD74252E55FE000BCE19 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				27F5146925326E270053A3E8 /* Data sources */,
+				2752E90D252EA0C000292C1E /* Cells */,
+				2752E90E252EA0D300292C1E /* Controllers */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2711BD78252E5607000BCE19 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				270A3B39252D59CF0052A0CD /* HomeWireframe.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		2711BD79252E560F000BCE19 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				270A3B3A252D59CF0052A0CD /* HomePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		2711BD7A252E5616000BCE19 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				270A3B3B252D59CF0052A0CD /* HomeModule.swift */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		2711BD7B252E562E000BCE19 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2752E921252F905000292C1E /* HomeModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		272C51882532452B00074B75 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				272C51892532453600074B75 /* LuckyStyles.swift */,
+				272C518E2532454F00074B75 /* UIColor+Lucky.swift */,
+				272C51932532467B00074B75 /* UIFont+Lucky.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		2752E90D252EA0C000292C1E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2752E90F252EA16600292C1E /* HomeCollectionViewCell.swift */,
+				2752E917252EA1E300292C1E /* HomeCollectionViewCell.xib */,
+				27F5146A25326E650053A3E8 /* TitleCell.swift */,
+				2722AB0C25328F3F00F4803D /* TitleCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		2752E90E252EA0D300292C1E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				270A3B37252D59CF0052A0CD /* HomeViewController.xib */,
+				270A3B38252D59CF0052A0CD /* HomeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		27F5146925326E270053A3E8 /* Data sources */ = {
+			isa = PBXGroup;
+			children = (
+				2711BD82252E5767000BCE19 /* HomeCollectionViewDataSource.swift */,
+			);
+			path = "Data sources";
+			sourceTree = "<group>";
+		};
+		4AC31DB6E8BB2E06699EDB43 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				42F6983ADAB5DF0691B7B53D /* Pods-Lucky.debug.xcconfig */,
+				FEE18C310DC8FA5B90FD2C1C /* Pods-Lucky.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +316,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 270A3B29252D39F40052A0CD /* Build configuration list for PBXNativeTarget "Lucky" */;
 			buildPhases = (
+				66E54036D10F48353CA6A02D /* [CP] Check Pods Manifest.lock */,
 				270A3AFB252D39F20052A0CD /* Sources */,
 				270A3AFC252D39F20052A0CD /* Frameworks */,
 				270A3AFD252D39F20052A0CD /* Resources */,
+				1299F012CE5D2115FB685261 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -234,7 +417,9 @@
 			files = (
 				270A3B0F252D39F30052A0CD /* LaunchScreen.storyboard in Resources */,
 				270A3B0C252D39F30052A0CD /* Assets.xcassets in Resources */,
-				270A3B0A252D39F20052A0CD /* Main.storyboard in Resources */,
+				270A3B3D252D59CF0052A0CD /* HomeViewController.xib in Resources */,
+				2752E918252EA1E300292C1E /* HomeCollectionViewCell.xib in Resources */,
+				2722AB0D25328F3F00F4803D /* TitleCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,14 +439,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1299F012CE5D2115FB685261 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lucky/Pods-Lucky-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lucky/Pods-Lucky-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Lucky/Pods-Lucky-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66E54036D10F48353CA6A02D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Lucky-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		270A3AFB252D39F20052A0CD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2711BD83252E5767000BCE19 /* HomeCollectionViewDataSource.swift in Sources */,
+				270A3B3C252D59CF0052A0CD /* HomeInteractor.swift in Sources */,
 				270A3B07252D39F20052A0CD /* ViewController.swift in Sources */,
+				270A3B41252D59CF0052A0CD /* HomeModule.swift in Sources */,
 				270A3B03252D39F20052A0CD /* AppDelegate.swift in Sources */,
-				270A3B05252D39F20052A0CD /* SceneDelegate.swift in Sources */,
+				2752E91D252F868B00292C1E /* PromotionsProvider.swift in Sources */,
+				272C51942532467B00074B75 /* UIFont+Lucky.swift in Sources */,
+				2752E910252EA16600292C1E /* HomeCollectionViewCell.swift in Sources */,
+				2711BD88252E57CC000BCE19 /* AppDelegate+Setup.swift in Sources */,
+				2752E922252F905000292C1E /* HomeModel.swift in Sources */,
+				272C518A2532453600074B75 /* LuckyStyles.swift in Sources */,
+				270A3B40252D59CF0052A0CD /* HomePresenter.swift in Sources */,
+				27F5146B25326E650053A3E8 /* TitleCell.swift in Sources */,
+				270A3B3F252D59CF0052A0CD /* HomeWireframe.swift in Sources */,
+				272C518F2532454F00074B75 /* UIColor+Lucky.swift in Sources */,
+				270A3B3E252D59CF0052A0CD /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +537,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		270A3B08252D39F20052A0CD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				270A3B09252D39F20052A0CD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		270A3B0D252D39F30052A0CD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -366,7 +598,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -420,7 +652,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -432,11 +664,12 @@
 		};
 		270A3B2A252D39F40052A0CD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42F6983ADAB5DF0691B7B53D /* Pods-Lucky.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3N984FLXB8;
-				INFOPLIST_FILE = Lucky/Info.plist;
+				INFOPLIST_FILE = Lucky/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,11 +683,12 @@
 		};
 		270A3B2B252D39F40052A0CD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEE18C310DC8FA5B90FD2C1C /* Pods-Lucky.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3N984FLXB8;
-				INFOPLIST_FILE = Lucky/Info.plist;
+				INFOPLIST_FILE = Lucky/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

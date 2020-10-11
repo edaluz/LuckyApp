@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import RxSwift
 
 protocol HomePresenterTestable {
     var wireframe: HomeWireframeTestable { get }
     var interactor: HomeInteractorTestable { get }
     func showHome(navigation: UINavigationController)
+    func getPromotions() -> Single<HomeModel?>
 }
 
 class HomePresenter: HomePresenterTestable {
@@ -25,5 +27,9 @@ class HomePresenter: HomePresenterTestable {
     
     func showHome(navigation: UINavigationController) {
         wireframe.showHome(navigation: navigation, presenter: self)
+    }
+    
+    func getPromotions() -> Single<HomeModel?> {
+        return interactor.getPromotions()
     }
 }
