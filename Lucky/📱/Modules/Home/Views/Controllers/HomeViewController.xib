@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="Lucky" customModuleProvider="target">
             <connections>
                 <outlet property="collectionView" destination="rbD-Dc-su8" id="n5E-4s-Rrh"/>
+                <outlet property="errorLabel" destination="nb6-vp-HyB" id="Z66-Jz-De0"/>
                 <outlet property="view" destination="iN0-l3-epB" id="A7I-EC-hrL"/>
             </connections>
         </placeholder>
@@ -19,6 +20,12 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nb6-vp-HyB">
+                    <rect key="frame" x="20" y="443" width="374" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="rbD-Dc-su8">
                     <rect key="frame" x="24" y="44" width="366" height="818"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -33,10 +40,13 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
+                <constraint firstItem="nb6-vp-HyB" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="JOI-Mv-pzU"/>
                 <constraint firstItem="rbD-Dc-su8" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="hCS-6X-QHV"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="rbD-Dc-su8" secondAttribute="bottom" id="phb-xr-Ji7"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="rbD-Dc-su8" secondAttribute="trailing" constant="24" id="qL5-Ez-0xR"/>
+                <constraint firstItem="nb6-vp-HyB" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="tAb-Xk-7HG"/>
                 <constraint firstItem="rbD-Dc-su8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="24" id="wUz-by-8Gx"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="nb6-vp-HyB" secondAttribute="trailing" constant="20" id="wyv-bR-fIu"/>
             </constraints>
             <point key="canvasLocation" x="139" y="145"/>
         </view>

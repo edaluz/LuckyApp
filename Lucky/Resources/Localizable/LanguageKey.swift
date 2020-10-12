@@ -16,6 +16,10 @@ enum LanguageKey: String {
     case price
     case redemptionsTitle
     
+    //Error
+    case errorPlaceholder
+    case homeError
+    
     func localize() -> String {
         return NSLocalizedString(self.rawValue, comment: "")
     }

@@ -13,6 +13,7 @@
             <connections>
                 <outlet property="brandLabel" destination="zzI-W7-y8N" id="ICy-JT-C9V"/>
                 <outlet property="descriptionLabel" destination="OMp-Ab-2ND" id="aaX-0S-iLf"/>
+                <outlet property="errorLabel" destination="wxP-6f-T2B" id="BCW-Cn-lhB"/>
                 <outlet property="expireLabel" destination="Ynz-ps-aXH" id="9k1-Ll-LyE"/>
                 <outlet property="newPriceLabel" destination="WUj-VD-AU9" id="O57-nN-h8L"/>
                 <outlet property="oldPriceLabel" destination="OOB-f6-GNb" id="a8Z-mh-PAb"/>
@@ -31,6 +32,12 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wxP-6f-T2B">
+                    <rect key="frame" x="186" y="442.5" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SJg-yG-6rU">
                     <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <subviews>
@@ -217,11 +224,13 @@
             <constraints>
                 <constraint firstItem="vIj-xQ-Gc4" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" priority="250" id="9nJ-Pe-6iP"/>
                 <constraint firstItem="SMk-Yf-RWT" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.15" id="Azj-sH-cZr"/>
+                <constraint firstItem="wxP-6f-T2B" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="DND-Yz-Sf7"/>
                 <constraint firstItem="SJg-yG-6rU" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="UWm-vg-OyT"/>
                 <constraint firstItem="vIj-xQ-Gc4" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="efa-Cc-hgS"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="SJg-yG-6rU" secondAttribute="trailing" id="gHl-e4-Zi3"/>
                 <constraint firstItem="SJg-yG-6rU" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="h5H-aX-EBJ"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="SJg-yG-6rU" secondAttribute="bottom" id="jYV-Gd-S9y"/>
+                <constraint firstItem="wxP-6f-T2B" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="y2X-Gt-qU1"/>
             </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="64.955357142857139"/>
         </view>

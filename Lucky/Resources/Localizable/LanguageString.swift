@@ -15,4 +15,8 @@ class LanguageString: NSObject {
     //Product Details
     static var price: String { return LanguageKey.price.localize() }
     static var redemptionsTitle: String { return LanguageKey.redemptionsTitle.localize() }
+    
+    //Error
+    static var errorPlaceholder: String { return LanguageKey.errorPlaceholder.localize() }
+    static var homeError: String { return LanguageKey.homeError.localize() }
 }

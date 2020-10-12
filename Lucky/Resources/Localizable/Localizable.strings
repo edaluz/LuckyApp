@@ -6,3 +6,6 @@
 "price" = "Price";
 "redemptionsTitle" = "REDEMPTIONS CAP:";
 
+//Error
+"errorPlaceholder" = "Offer Not Available";
+"homeError" = "Oops! Something went wrong";

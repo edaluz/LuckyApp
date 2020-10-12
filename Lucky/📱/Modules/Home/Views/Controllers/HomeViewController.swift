@@ -11,7 +11,17 @@ import RxSwift
 
 class HomeViewController: UIViewController {
     
+    @IBOutlet private weak var errorLabel: UILabel! {
+        didSet {
+            errorLabel.textColor = LuckyStyles.secondary.content
+            errorLabel.font = LuckyStyles.font.h1Bold
+            errorLabel.text = LanguageString.homeError
+            errorLabel.isHidden = true
+        }
+    }
+    
     @IBOutlet private weak var collectionView: UICollectionView!
+    
     private var disposeBag: DisposeBag = DisposeBag()
     private var presenter: HomePresenterTestable
     private lazy var dataSource: HomeCollectionViewDataSource = {
@@ -54,8 +64,7 @@ class HomeViewController: UIViewController {
             self?.activityIndicator.stopAnimating()
         }, onError: { [weak self] (error) in
             self?.activityIndicator.stopAnimating()
-            
-            //Show Placeholder
+            self?.errorLabel.isHidden = false
         }).disposed(by: disposeBag)
     }
     

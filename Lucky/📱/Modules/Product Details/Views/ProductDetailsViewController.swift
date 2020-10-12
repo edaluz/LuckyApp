@@ -11,84 +11,92 @@ import UIKit
 import RxSwift
 
 class ProductDetailsViewController: UIViewController {
-    @IBOutlet weak var productImageView: UIImageView!
+    @IBOutlet private weak var productImageView: UIImageView!
     
-    @IBOutlet weak var scrollView: UIScrollView! {
+    @IBOutlet private weak var errorLabel: UILabel! {
+        didSet {
+            errorLabel.textColor = LuckyStyles.secondary.content
+            errorLabel.font = LuckyStyles.font.h1Bold
+            errorLabel.text = LanguageString.errorPlaceholder
+            errorLabel.isHidden = true
+        }
+    }
+    
+    @IBOutlet private weak var scrollView: UIScrollView! {
         didSet {
             scrollView.isHidden = true
         }
     }
     
-    @IBOutlet weak var brandLabel: UILabel! {
+    @IBOutlet private weak var brandLabel: UILabel! {
         didSet {
             brandLabel.textColor = LuckyStyles.secondary.gray
             brandLabel.font = LuckyStyles.font.captionTwoRegular
         }
     }
     
-    @IBOutlet weak var reviewsImageView: UIImageView! {
+    @IBOutlet private weak var reviewsImageView: UIImageView! {
         didSet {
             reviewsImageView.image = UIImage.init(named: "ReviewsIcon")
             reviewsImageView.contentMode = .scaleAspectFit
         }
     }
     
-    @IBOutlet weak var reviewsLabel: UILabel! {
+    @IBOutlet private weak var reviewsLabel: UILabel! {
         didSet {
             reviewsLabel.textColor = LuckyStyles.secondary.gray
             reviewsLabel.font = LuckyStyles.font.captionTwoRegular
         }
     }
     
-    @IBOutlet weak var titleLabel: UILabel! {
+    @IBOutlet private weak var titleLabel: UILabel! {
         didSet {
             titleLabel.textColor = .black
             titleLabel.font = LuckyStyles.font.h1Bold
         }
     }
     
-    @IBOutlet weak var descriptionLabel: UILabel! {
+    @IBOutlet private weak var descriptionLabel: UILabel! {
         didSet {
             descriptionLabel.textColor = LuckyStyles.secondary.content
             descriptionLabel.font = LuckyStyles.font.bodyRegular
         }
     }
     
-    @IBOutlet weak var priceLabel: UILabel! {
+    @IBOutlet private weak var priceLabel: UILabel! {
         didSet {
             priceLabel.textColor = LuckyStyles.secondary.content
             priceLabel.font = LuckyStyles.font.labelRegular
         }
     }
     
-    @IBOutlet weak var oldPriceLabel: UILabel! {
+    @IBOutlet private weak var oldPriceLabel: UILabel! {
         didSet {
             oldPriceLabel.textColor = LuckyStyles.secondary.gray
             oldPriceLabel.font = LuckyStyles.font.captionOneRegular
         }
     }
     
-    @IBOutlet weak var newPriceLabel: UILabel! {
+    @IBOutlet private weak var newPriceLabel: UILabel! {
         didSet {
             newPriceLabel.textColor = LuckyStyles.secondary.content
             newPriceLabel.font = LuckyStyles.font.headlineRegular
         }
     }
     
-    @IBOutlet weak var expireLabel: UILabel! {
+    @IBOutlet private weak var expireLabel: UILabel! {
         didSet {
             expireLabel.textColor = LuckyStyles.secondary.gray
             expireLabel.font = LuckyStyles.font.labelRegular
         }
     }
     
-    @IBOutlet weak var redemptionsLabel: UILabel! {
+    @IBOutlet private weak var redemptionsLabel: UILabel! {
         didSet {
             redemptionsLabel.textColor = LuckyStyles.secondary.content
             redemptionsLabel.font = LuckyStyles.font.captionTwoRegular
         }
     }
-    
     
     private var disposeBag: DisposeBag = DisposeBag()
     private var presenter: ProductDetailsPresenterTestable
@@ -122,11 +130,10 @@ class ProductDetailsViewController: UIViewController {
             guard let info = productInfo else { return }
             self?.info = info
             self?.setProductInfo()
-            self?.activityIndicator.stopAnimating()
+            self?.activityIndicator.stopAnimating()            
         }, onError: { [weak self] (error) in
             self?.activityIndicator.stopAnimating()
-            
-            //Show Placeholder
+            self?.errorLabel.isHidden = false
         }).disposed(by: disposeBag)
     }
     
