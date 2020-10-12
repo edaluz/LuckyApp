@@ -9,8 +9,8 @@
 import  UIKit
 
 struct HomeModel: Codable {
-    var title: String
-    var sections: [HomeSectionModel]
+    let title: String
+    let sections: [HomeSectionModel]
     
     enum CodingKeys: String, CodingKey {
         case title
@@ -19,8 +19,8 @@ struct HomeModel: Codable {
 }
 
 struct HomeSectionModel: Codable {
-    var title: String
-    var promotions: [PromotionModel]
+    let title: String
+    let promotions: [PromotionModel]
     
     enum CodingKeys: String, CodingKey {
         case title
@@ -29,12 +29,12 @@ struct HomeSectionModel: Codable {
 }
 
 struct PromotionModel: Codable {
-    var detailUrl: String
-    var imageUrl: String
-    var brand: String
-    var title: String
-    var tags: String?
-    var favoriteCount: Int
+    let detailUrl: String
+    let imageUrl: String
+    let brand: String
+    let title: String
+    let tags: String?
+    let favoriteCount: Int
     
     enum CodingKeys: String, CodingKey {
         case detailUrl
