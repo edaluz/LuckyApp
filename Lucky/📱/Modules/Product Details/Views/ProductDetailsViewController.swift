@@ -94,6 +94,8 @@ class ProductDetailsViewController: UIViewController {
     private var presenter: ProductDetailsPresenterTestable
     private var info: ProductDetailsModel?
     
+    private let activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
+    
     init(with presenter: ProductDetailsPresenterTestable) {
         self.presenter = presenter
         super.init(nibName: nil, bundle: nil)
@@ -105,18 +107,24 @@ class ProductDetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupViews()
         getProductDetails()
     }
     
+    final func setupViews() {
+        self.view.addSubview(activityIndicator)
+        activityIndicator.center = self.view.center
+    }
     
     private func getProductDetails() {
+        activityIndicator.startAnimating()
         presenter.getProductDetails().subscribe(onSuccess: { [weak self] (productInfo) in
             guard let info = productInfo else { return }
             self?.info = info
             self?.setProductInfo()
-        }, onError: { (error) in
-            //Error
-            
+            self?.activityIndicator.stopAnimating()
+        }, onError: { [weak self] (error) in
+            self?.activityIndicator.stopAnimating()
         }).disposed(by: disposeBag)
     }
     

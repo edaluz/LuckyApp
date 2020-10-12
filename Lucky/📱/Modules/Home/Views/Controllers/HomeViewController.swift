@@ -20,6 +20,8 @@ class HomeViewController: UIViewController {
         return dataSource
     }()
     
+    private let activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
+    
     private var homeData: HomeModel?
     
     init(with presenter: HomePresenterTestable) {
@@ -33,17 +35,25 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         dataSource.collectionView = collectionView
+        setupViews()
         getData()
     }
     
+    final func setupViews() {
+        self.view.addSubview(activityIndicator)
+        activityIndicator.center = self.view.center
+    }
+    
     private func getData() {
+        activityIndicator.startAnimating()
         presenter.getPromotions().subscribe(onSuccess: { [weak self] (homeData) in
             guard let data = homeData else { return }
             self?.homeData = data
             self?.dataSource.setSections(data.sections)
             self?.setHomeTitle()
-        }, onError: { (error) in
-            //Error
+            self?.activityIndicator.stopAnimating()
+        }, onError: { [weak self] (error) in
+            self?.activityIndicator.stopAnimating()
             
         }).disposed(by: disposeBag)
     }
