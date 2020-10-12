@@ -14,7 +14,12 @@ class HomeViewController: UIViewController {
     @IBOutlet private weak var collectionView: UICollectionView!
     private var disposeBag: DisposeBag = DisposeBag()
     private var presenter: HomePresenterTestable
-    private let dataSource: HomeCollectionViewDataSource = HomeCollectionViewDataSource()
+    private lazy var dataSource: HomeCollectionViewDataSource = {
+        let dataSource = HomeCollectionViewDataSource()
+        dataSource.delegate = self
+        return dataSource
+    }()
+    
     private var homeData: HomeModel?
     
     init(with presenter: HomePresenterTestable) {
@@ -46,5 +51,12 @@ class HomeViewController: UIViewController {
     func setHomeTitle() {
         guard let data = self.homeData else { return }
         self.navigationItem.title = data.title
+    }
+}
+
+extension HomeViewController: HomeDataSourceDelegate {
+    func didSelectItem(promotion: PromotionModel) {
+        guard let navigation = self.navigationController else { return }
+        presenter.showProductDetails(navigation, url: promotion.detailUrl)
     }
 }

@@ -15,7 +15,7 @@ protocol HomeDataSourceProtocol {
 }
 
 protocol HomeDataSourceDelegate {
-    
+    func didSelectItem(promotion: PromotionModel)
 }
 
 class HomeCollectionViewDataSource: NSObject, HomeDataSourceProtocol, UICollectionViewDelegate {
@@ -89,6 +89,12 @@ extension HomeCollectionViewDataSource: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
         return CGSize.zero
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let section = sections[indexPath.section]
+        let promotion = section.promotions[indexPath.row]
+        delegate?.didSelectItem(promotion: promotion)
     }
 }
 

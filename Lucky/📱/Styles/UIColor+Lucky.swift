@@ -23,11 +23,7 @@ public struct LuckySecondaryColor {
     // MARK: - Secondary colors
     
     public let gray: UIColor = UIColor(red: 113/255.0, green: 136/255.0, blue: 151/255.0, alpha: 1.0)
-    public let content: UIColor = UIColor(red: 112/255.0, green: 105/255.0, blue: 103/255.0, alpha: 1.0)
-    public let disable: UIColor = UIColor(red: 184/255.0, green: 180/255.0, blue: 180/255.0, alpha: 1.0)
-    public let divider: UIColor = UIColor(red: 184/255.0, green: 180/255.0, blue: 180/255.0, alpha: 0.25)
-    public let input: UIColor = UIColor(red: 244/255.0, green: 244/255.0, blue: 244/255.0, alpha: 1.0)
-    public let success: UIColor = UIColor(red: 12/255.0, green: 198/255.0, blue: 101/255.0, alpha: 1.0)
+    public let content: UIColor = UIColor(red: 34/255.0, green: 45/255.0, blue: 52/255.0, alpha: 1.0)
 }
 
 public struct LuckyShadowColor {

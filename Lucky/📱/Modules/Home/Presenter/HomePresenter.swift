@@ -14,6 +14,7 @@ protocol HomePresenterTestable {
     var interactor: HomeInteractorTestable { get }
     func showHome(navigation: UINavigationController)
     func getPromotions() -> Single<HomeModel?>
+    func showProductDetails(_ navigation: UINavigationController, url: String)
 }
 
 class HomePresenter: HomePresenterTestable {
@@ -31,5 +32,9 @@ class HomePresenter: HomePresenterTestable {
     
     func getPromotions() -> Single<HomeModel?> {
         return interactor.getPromotions()
+    }
+    
+    func showProductDetails(_ navigation: UINavigationController, url: String) {
+        wireframe.showProductDetails(navigation: navigation, url: url)
     }
 }

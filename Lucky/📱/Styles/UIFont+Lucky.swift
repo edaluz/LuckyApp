@@ -12,7 +12,7 @@ import UIKit
 public enum LuckyFontBase: CGFloat {
     case h1 = 32
     case h2 = 24
-    case headline = 20
+    case headline = 18
     case body = 16
     case captionOne = 14
     case captionTwo = 12
