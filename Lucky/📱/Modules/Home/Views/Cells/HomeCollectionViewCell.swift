@@ -61,7 +61,7 @@ class HomeCollectionViewCell: UICollectionViewCell {
         setPromotionImage(imageURL: promotion.imageUrl)
         brandLabel.text = promotion.brand.uppercased()
         titleLabel.text = promotion.title
-        tagsLabel.text = promotion.tags ?? "Discount"
+        tagsLabel.text = promotion.tags ?? LanguageString.discount
         reviewsLabel.text = "\(promotion.favoriteCount.description)K"
     }
     

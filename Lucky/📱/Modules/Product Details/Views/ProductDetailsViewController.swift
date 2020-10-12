@@ -127,7 +127,7 @@ class ProductDetailsViewController: UIViewController {
         titleLabel.text = info.title
         descriptionLabel.text = info.description
         reviewsLabel.text = "\(info.favoriteCount.description)K"
-        priceLabel.text = "Price"
+        priceLabel.text = LanguageString.price.uppercased()
         expireLabel.text = info.expiration
         
         //attribute string for Old Price Label
@@ -138,7 +138,7 @@ class ProductDetailsViewController: UIViewController {
         
         
         newPriceLabel.text = info.prices.new
-        redemptionsLabel.text = "REDEMPTIONS CAP: \(info.redemptionsCap.uppercased())"
+        redemptionsLabel.text = "\(LanguageString.redemptionsTitle) \(info.redemptionsCap.uppercased())"
         
         self.scrollView.isHidden = false
     }

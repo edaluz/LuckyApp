@@ -30,6 +30,9 @@
 		2722AB312532AD2300F4803D /* ProductDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2722AB302532AD2300F4803D /* ProductDetailsInteractor.swift */; };
 		2722AB372533AA3E00F4803D /* ProductDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2722AB362533AA3E00F4803D /* ProductDetailsModel.swift */; };
 		2722AB3F2533ABE100F4803D /* ProductsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2722AB3E2533ABE100F4803D /* ProductsProvider.swift */; };
+		2722AB442533ED0400F4803D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2722AB432533ED0400F4803D /* Localizable.strings */; };
+		2722AB542533F1CC00F4803D /* LanguageKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2722AB532533F1CC00F4803D /* LanguageKey.swift */; };
+		2722AB592533F1DF00F4803D /* LanguageString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2722AB582533F1DF00F4803D /* LanguageString.swift */; };
 		272C518A2532453600074B75 /* LuckyStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272C51892532453600074B75 /* LuckyStyles.swift */; };
 		272C518F2532454F00074B75 /* UIColor+Lucky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272C518E2532454F00074B75 /* UIColor+Lucky.swift */; };
 		272C51942532467B00074B75 /* UIFont+Lucky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272C51932532467B00074B75 /* UIFont+Lucky.swift */; };
@@ -89,6 +92,9 @@
 		2722AB302532AD2300F4803D /* ProductDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsInteractor.swift; sourceTree = "<group>"; };
 		2722AB362533AA3E00F4803D /* ProductDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsModel.swift; sourceTree = "<group>"; };
 		2722AB3E2533ABE100F4803D /* ProductsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsProvider.swift; sourceTree = "<group>"; };
+		2722AB432533ED0400F4803D /* Localizable.strings */ = {isa = PBXFileReference; explicitFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		2722AB532533F1CC00F4803D /* LanguageKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageKey.swift; sourceTree = "<group>"; };
+		2722AB582533F1DF00F4803D /* LanguageString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageString.swift; sourceTree = "<group>"; };
 		272C51892532453600074B75 /* LuckyStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyStyles.swift; sourceTree = "<group>"; };
 		272C518E2532454F00074B75 /* UIColor+Lucky.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Lucky.swift"; sourceTree = "<group>"; };
 		272C51932532467B00074B75 /* UIFont+Lucky.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Lucky.swift"; sourceTree = "<group>"; };
@@ -187,6 +193,7 @@
 		270A3B32252D53920052A0CD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2722AB522533F1BE00F4803D /* Localizable */,
 				270A3B02252D39F20052A0CD /* AppDelegate.swift */,
 				270A3B06252D39F20052A0CD /* ViewController.swift */,
 				270A3B0B252D39F30052A0CD /* Assets.xcassets */,
@@ -340,6 +347,16 @@
 				2722AB362533AA3E00F4803D /* ProductDetailsModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		2722AB522533F1BE00F4803D /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				2722AB532533F1CC00F4803D /* LanguageKey.swift */,
+				2722AB582533F1DF00F4803D /* LanguageString.swift */,
+				2722AB432533ED0400F4803D /* Localizable.strings */,
+			);
+			path = Localizable;
 			sourceTree = "<group>";
 		};
 		272C51882532452B00074B75 /* Styles */ = {
@@ -498,6 +515,7 @@
 				270A3B0F252D39F30052A0CD /* LaunchScreen.storyboard in Resources */,
 				270A3B0C252D39F30052A0CD /* Assets.xcassets in Resources */,
 				270A3B3D252D59CF0052A0CD /* HomeViewController.xib in Resources */,
+				2722AB442533ED0400F4803D /* Localizable.strings in Resources */,
 				2752E918252EA1E300292C1E /* HomeCollectionViewCell.xib in Resources */,
 				2722AB2C2532A9CB00F4803D /* ProductDetailsViewController.xib in Resources */,
 				2722AB0D25328F3F00F4803D /* TitleCell.xib in Resources */,
@@ -580,10 +598,12 @@
 				2722AB182532A93700F4803D /* ProductDetailsModule.swift in Sources */,
 				272C51942532467B00074B75 /* UIFont+Lucky.swift in Sources */,
 				2722AB312532AD2300F4803D /* ProductDetailsInteractor.swift in Sources */,
+				2722AB592533F1DF00F4803D /* LanguageString.swift in Sources */,
 				2752E910252EA16600292C1E /* HomeCollectionViewCell.swift in Sources */,
 				2711BD88252E57CC000BCE19 /* AppDelegate+Setup.swift in Sources */,
 				2752E922252F905000292C1E /* HomeModel.swift in Sources */,
 				272C518A2532453600074B75 /* LuckyStyles.swift in Sources */,
+				2722AB542533F1CC00F4803D /* LanguageKey.swift in Sources */,
 				270A3B40252D59CF0052A0CD /* HomePresenter.swift in Sources */,
 				2722AB1D2532A94F00F4803D /* ProductDetailsPresenter.swift in Sources */,
 				27F5146B25326E650053A3E8 /* TitleCell.swift in Sources */,
@@ -640,6 +660,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -700,6 +721,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
