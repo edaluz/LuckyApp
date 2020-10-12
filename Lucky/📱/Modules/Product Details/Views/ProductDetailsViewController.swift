@@ -125,6 +125,8 @@ class ProductDetailsViewController: UIViewController {
             self?.activityIndicator.stopAnimating()
         }, onError: { [weak self] (error) in
             self?.activityIndicator.stopAnimating()
+            
+            //Show Placeholder
         }).disposed(by: disposeBag)
     }
     

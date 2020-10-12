@@ -55,6 +55,7 @@ class HomeViewController: UIViewController {
         }, onError: { [weak self] (error) in
             self?.activityIndicator.stopAnimating()
             
+            //Show Placeholder
         }).disposed(by: disposeBag)
     }
     
