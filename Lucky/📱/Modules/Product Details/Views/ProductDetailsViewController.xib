@@ -104,7 +104,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OMp-Ab-2ND" userLabel="Description Label">
-                                            <rect key="frame" x="0.0" y="158" width="366" height="251.5"/>
+                                            <rect key="frame" x="0.0" y="172" width="366" height="237.5"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" priority="250" constant="256" id="vtL-bx-Vf1"/>
                                             </constraints>
@@ -178,7 +178,7 @@
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="UQH-9D-KkX" secondAttribute="trailing" id="02d-Yt-zQN"/>
                                         <constraint firstItem="OMp-Ab-2ND" firstAttribute="leading" secondItem="w90-dC-9Oo" secondAttribute="leading" id="2Bp-ax-dtA"/>
-                                        <constraint firstItem="OMp-Ab-2ND" firstAttribute="top" secondItem="UQH-9D-KkX" secondAttribute="bottom" constant="10" id="FvB-ha-RTT"/>
+                                        <constraint firstItem="OMp-Ab-2ND" firstAttribute="top" secondItem="UQH-9D-KkX" secondAttribute="bottom" constant="24" id="FvB-ha-RTT"/>
                                         <constraint firstAttribute="bottom" secondItem="SMk-Yf-RWT" secondAttribute="bottom" priority="999" id="L7g-9i-PR9"/>
                                         <constraint firstAttribute="trailing" secondItem="SMk-Yf-RWT" secondAttribute="trailing" id="Lhv-M6-Zo3"/>
                                         <constraint firstItem="UQH-9D-KkX" firstAttribute="top" secondItem="oIK-tB-kuN" secondAttribute="bottom" constant="8" id="Lto-RG-Urf"/>
