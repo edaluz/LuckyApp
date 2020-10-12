@@ -14,7 +14,11 @@ protocol HomeInteractorTestable {
 }
 
 class HomeInteractor: HomeInteractorTestable {
-    private var provider = PromotionsProvider()
+    private var provider: PromotionsProviderProtocol
+    
+    init(provider: PromotionsProviderProtocol = PromotionsProvider()) {
+        self.provider = provider
+    }
     
     func getPromotions() -> Single<HomeModel?> {
         return provider.getPromotions()

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2020B0067E0370D17246B316 /* Pods_LuckyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88A9464BDD07656B8A0CD77E /* Pods_LuckyTests.framework */; };
 		270A3B03252D39F20052A0CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270A3B02252D39F20052A0CD /* AppDelegate.swift */; };
 		270A3B07252D39F20052A0CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270A3B06252D39F20052A0CD /* ViewController.swift */; };
 		270A3B0C252D39F30052A0CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 270A3B0B252D39F30052A0CD /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 		2722AB442533ED0400F4803D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2722AB432533ED0400F4803D /* Localizable.strings */; };
 		2722AB542533F1CC00F4803D /* LanguageKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2722AB532533F1CC00F4803D /* LanguageKey.swift */; };
 		2722AB592533F1DF00F4803D /* LanguageString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2722AB582533F1DF00F4803D /* LanguageString.swift */; };
+		2722AB632534A43500F4803D /* PromotionsProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2722AB622534A43500F4803D /* PromotionsProviderMock.swift */; };
 		272C518A2532453600074B75 /* LuckyStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272C51892532453600074B75 /* LuckyStyles.swift */; };
 		272C518F2532454F00074B75 /* UIColor+Lucky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272C518E2532454F00074B75 /* UIColor+Lucky.swift */; };
 		272C51942532467B00074B75 /* UIFont+Lucky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272C51932532467B00074B75 /* UIFont+Lucky.swift */; };
@@ -62,6 +64,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		117C6568CCAC5672B028AB92 /* Pods-LuckyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuckyTests.debug.xcconfig"; path = "Target Support Files/Pods-LuckyTests/Pods-LuckyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		21CAC2A106A4ACC7344A6206 /* Pods_Lucky.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lucky.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		270A3AFF252D39F20052A0CD /* Lucky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lucky.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		270A3B02252D39F20052A0CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +98,7 @@
 		2722AB432533ED0400F4803D /* Localizable.strings */ = {isa = PBXFileReference; explicitFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		2722AB532533F1CC00F4803D /* LanguageKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageKey.swift; sourceTree = "<group>"; };
 		2722AB582533F1DF00F4803D /* LanguageString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageString.swift; sourceTree = "<group>"; };
+		2722AB622534A43500F4803D /* PromotionsProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionsProviderMock.swift; sourceTree = "<group>"; };
 		272C51892532453600074B75 /* LuckyStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyStyles.swift; sourceTree = "<group>"; };
 		272C518E2532454F00074B75 /* UIColor+Lucky.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Lucky.swift"; sourceTree = "<group>"; };
 		272C51932532467B00074B75 /* UIFont+Lucky.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Lucky.swift"; sourceTree = "<group>"; };
@@ -104,6 +108,8 @@
 		2752E921252F905000292C1E /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		27F5146A25326E650053A3E8 /* TitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCell.swift; sourceTree = "<group>"; };
 		42F6983ADAB5DF0691B7B53D /* Pods-Lucky.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lucky.debug.xcconfig"; path = "Target Support Files/Pods-Lucky/Pods-Lucky.debug.xcconfig"; sourceTree = "<group>"; };
+		88A9464BDD07656B8A0CD77E /* Pods_LuckyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LuckyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9ED79C255EF8BC02A029C758 /* Pods-LuckyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuckyTests.release.xcconfig"; path = "Target Support Files/Pods-LuckyTests/Pods-LuckyTests.release.xcconfig"; sourceTree = "<group>"; };
 		FEE18C310DC8FA5B90FD2C1C /* Pods-Lucky.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lucky.release.xcconfig"; path = "Target Support Files/Pods-Lucky/Pods-Lucky.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2020B0067E0370D17246B316 /* Pods_LuckyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				21CAC2A106A4ACC7344A6206 /* Pods_Lucky.framework */,
+				88A9464BDD07656B8A0CD77E /* Pods_LuckyTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -175,7 +183,8 @@
 		270A3B18252D39F30052A0CD /* LuckyTests */ = {
 			isa = PBXGroup;
 			children = (
-				270A3B19252D39F30052A0CD /* LuckyTests.swift */,
+				2722AB612534A41D00F4803D /* Tests */,
+				2722AB602534A41200F4803D /* Mocks */,
 				270A3B1B252D39F30052A0CD /* Info.plist */,
 			);
 			path = LuckyTests;
@@ -359,6 +368,22 @@
 			path = Localizable;
 			sourceTree = "<group>";
 		};
+		2722AB602534A41200F4803D /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				2722AB622534A43500F4803D /* PromotionsProviderMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		2722AB612534A41D00F4803D /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				270A3B19252D39F30052A0CD /* LuckyTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
 		272C51882532452B00074B75 /* Styles */ = {
 			isa = PBXGroup;
 			children = (
@@ -402,6 +427,8 @@
 			children = (
 				42F6983ADAB5DF0691B7B53D /* Pods-Lucky.debug.xcconfig */,
 				FEE18C310DC8FA5B90FD2C1C /* Pods-Lucky.release.xcconfig */,
+				117C6568CCAC5672B028AB92 /* Pods-LuckyTests.debug.xcconfig */,
+				9ED79C255EF8BC02A029C758 /* Pods-LuckyTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -432,9 +459,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 270A3B2C252D39F40052A0CD /* Build configuration list for PBXNativeTarget "LuckyTests" */;
 			buildPhases = (
+				2F11F629549E4566C4C3E6F0 /* [CP] Check Pods Manifest.lock */,
 				270A3B11252D39F30052A0CD /* Sources */,
 				270A3B12252D39F30052A0CD /* Frameworks */,
 				270A3B13252D39F30052A0CD /* Resources */,
+				FC14033C234BE550A7F6C37E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -556,6 +585,28 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Lucky/Pods-Lucky-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		2F11F629549E4566C4C3E6F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LuckyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		66E54036D10F48353CA6A02D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -576,6 +627,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC14033C234BE550A7F6C37E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LuckyTests/Pods-LuckyTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LuckyTests/Pods-LuckyTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LuckyTests/Pods-LuckyTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -617,6 +685,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2722AB632534A43500F4803D /* PromotionsProviderMock.swift in Sources */,
 				270A3B1A252D39F30052A0CD /* LuckyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -812,6 +881,7 @@
 		};
 		270A3B2D252D39F40052A0CD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 117C6568CCAC5672B028AB92 /* Pods-LuckyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -834,6 +904,7 @@
 		};
 		270A3B2E252D39F40052A0CD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9ED79C255EF8BC02A029C758 /* Pods-LuckyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
