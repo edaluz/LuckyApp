@@ -1,0 +1,35 @@
+//
+//  ProductDetailsMVVMModel.swift
+//  Lucky
+//
+//  Created by Emiliano Da Luz on 12/01/2021.
+//  Copyright © 2021 MEK. All rights reserved.
+//
+
+import  UIKit
+
+struct ProductDetailsMVVMModel: Codable {
+    let id: Int
+    let imageUrl: String
+    let brand: String
+    let title: String
+    let tags: String?
+    let favoriteCount: Int
+    let description: String
+    let prices: ProductPrices
+    let expiration: String
+    let redemptionsCap: String
+    
+    enum CodingKeys: String, CodingKey {
+        case id
+        case imageUrl
+        case brand
+        case title
+        case tags
+        case favoriteCount
+        case description
+        case prices = "price"
+        case expiration
+        case redemptionsCap
+    }
+}
