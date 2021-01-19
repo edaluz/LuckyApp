@@ -15,6 +15,14 @@ protocol ProductDetailsPresenterTestable {
     var interactor: ProductDetailsInteractorTestable { get }
     func showProductDetails(navigation: UINavigationController, productDetailURL: String)
     func getProductDetails() -> Single<ProductDetailsModel?>
+    
+    //Extra material
+    func getBranches() -> Single<ProductDetailsModel?>
+    func getCategories() -> Single<ProductDetailsModel?>
+    func showBranches(navigation: UINavigationController)
+    func showCategories(navigation: UINavigationController)
+    func trackShowProductDetails()
+    func trackButtonTapped() 
 }
 
 class ProductDetailsPresenter: ProductDetailsPresenterTestable {
@@ -37,4 +45,43 @@ class ProductDetailsPresenter: ProductDetailsPresenterTestable {
         
         return interactor.getProductDetails(url)
     }
+    
+    //Extra functions to increase the size of the component
+    func getCategories() -> Single<ProductDetailsModel?> {
+        guard let url = detailURL else { return .just(nil) }
+        
+        return interactor.getProductDetails(url)
+    }
+    
+    func getBranches() -> Single<ProductDetailsModel?> {
+        guard let url = detailURL else { return .just(nil) }
+        
+        return interactor.getProductDetails(url)
+    }
+    
+    func showBranches(navigation: UINavigationController) {
+        //Should show branches for the current offer
+        let isHotDealOfffer: Bool = (detailURL != nil) ? true : false
+        
+        if isHotDealOfffer {
+            wireframe.showBranches(navigation: navigation)
+        } else {
+            wireframe.showCategories(navigation: navigation, presenter: self)
+        }
+    }
+    
+    func showCategories(navigation: UINavigationController) {
+        //Should show Categories for the current offer
+        wireframe.showProductDetails(navigation: navigation, presenter: self)
+    }
+    
+    func trackShowProductDetails() {
+        //Track Analytics
+    }
+    
+    func trackButtonTapped() {
+        //Track Analytics
+    }
+    
+    
 }
